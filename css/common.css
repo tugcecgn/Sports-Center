@@ -1,5 +1,6 @@
 :root{
     --buton-color-1:#355592;
+    --background-color-1:#D6EAF8;
 
 }
 span{
@@ -25,4 +26,29 @@ span{
     font-weight: 600;
     color: white;
     box-sizing: border-box;/*borderı butonun içinde tutmsı için */
+}
+.small-box{
+    max-width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.small-box h1{
+    color: var(--buton-color-1);
+    font-weight: 800;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.small-box span{
+    display: inline-block;
+    border-radius: 6px;
+    width: 70px;
+    height: 1px;
+    margin-bottom:20px ;
+    background-color: orange;
+}
+
+.logo-img{
+    margin: 0;
+    padding: 0;
+    height: 60px;
 }

@@ -13,7 +13,7 @@
     padding-top: 140px;
 }
 .info-section{
-    background-color: #D6EAF8;
+    background-color: var(--background-color-1);
 }
 .info{
     display: flex;
@@ -34,6 +34,7 @@
     font-weight: 900;
     font-size: 18px;
     color: var(--buton-color-1);
+
 }
 .section-box h5{
     font-weight: 900;
