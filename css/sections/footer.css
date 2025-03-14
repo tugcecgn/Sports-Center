@@ -10,8 +10,8 @@
     flex-direction: column;
 
 }
-.contact-section{
-    margin:60px auto;
+.container-section{
+    padding:60px;
 }
 .contact-info{
     display: flex;
@@ -48,4 +48,38 @@
 .links a{
     text-decoration: none;
     color: white;
+}
+.review{
+    background-color: var(--background-color-1);
+}
+.comment{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.comment img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    
+
+}
+.comment .client{
+    display: flex;
+    gap: 15px;
+    padding: 13px;
+    align-items: center;
+
+}
+
+.comment p{
+    font-size: 13px;
+    background-color: var(--buton-color-1);
+    padding: 10px;
+    color: white;
+}
+.comment h6{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
 }

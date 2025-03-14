@@ -3,7 +3,7 @@
     --background-color-1:#D6EAF8;
 
 }
-span{
+.blue-box{
     background-color: #355592;
     font-weight: 700;
     color: white;
@@ -51,4 +51,11 @@ span{
     margin: 0;
     padding: 0;
     height: 60px;
+}
+.line{
+    background-color: #355592;
+    font-weight: 700;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
 }
