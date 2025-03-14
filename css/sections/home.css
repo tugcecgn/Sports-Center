@@ -1,0 +1,44 @@
+.home{
+    background-image:url(../../images/hero-man.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100vh;
+    color: white;
+    background-position-y: -20px;
+    position: relative;
+
+}
+.section-title{
+    padding-top: 140px;
+}
+.info-section{
+    background-color: #D6EAF8;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.section-box{
+    background-color: white;
+    padding: 10px 50px 10px 50px ;
+    margin: 35px 0 35px 0;
+    text-align: center;
+    flex: 1;
+    margin: 40px 13px;
+
+}
+.section-box p{
+    font-weight: 900;
+    font-size: 18px;
+    color: var(--buton-color-1);
+}
+.section-box h5{
+    font-weight: 900;
+    font-size: 17px;
+}
+.navbar-scrolled {
+    background-color: var(--buton-color-1) /* Sayfa kaydırılınca koyulaşsın */
+}

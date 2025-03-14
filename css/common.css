@@ -1,0 +1,28 @@
+:root{
+    --buton-color-1:#355592;
+
+}
+span{
+    background-color: #355592;
+    font-weight: 700;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.section-title h1{
+    font-weight: 900;
+    font-size: 60px;
+}
+.btn-custom{
+    background-color: #355592;
+    color: white;
+    font-weight: 600;
+    margin-right: 15px;
+}
+.btn-custom2{
+    background-color: transparent;
+    border: 1px solid white;
+    font-weight: 600;
+    color: white;
+    box-sizing: border-box;/*borderı butonun içinde tutmsı için */
+}
