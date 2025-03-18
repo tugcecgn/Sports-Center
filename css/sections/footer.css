@@ -88,4 +88,7 @@
     .contact {
         flex-direction: column;
     }
+    .comment{
+        flex-direction: column;
+    }
 }

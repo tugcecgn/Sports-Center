@@ -34,3 +34,9 @@
     box-shadow:0 8px 16px rgba(0, 0, 0, 0.5); 
     transition-duration: 500ms;
 }
+@media (max-width: 991px) {
+    .purchase {
+        flex-direction: column;
+    }
+
+}

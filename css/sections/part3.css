@@ -6,8 +6,3 @@
 .container-trainers{
     background-color: var(--background-color-1);
 }
-.bmi{
-    display: flex;
-    flex-direction: row;
-    
-}

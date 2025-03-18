@@ -4,7 +4,7 @@ window.onscroll = function(){
     var scrollposition = window.scrollY;/*kullanıcının sayfayı ne kadar kaydırıdığı bilginisini verir.*/
     var homeHeight = header.offsetHeight;/*headerın uzunluk bilgisini alır  */
 
-    if (scrollPosition > homeHeight) {
+    if (scrollposition > homeHeight) {
         navbar.classList.add("navbar-scrolled");
     } else {
         navbar.classList.remove("navbar-scrolled");
