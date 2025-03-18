@@ -14,35 +14,29 @@
 </head>
 <body>
 <!--navigasyyon kısmı-->
-<header id="header">
-    <div class="container fixed-top">
-        <div class="logo">
-            <img src="./images/logo.png" alt="logo" class="logo-img">
-        </div>
-        <div>
-            <nav class="navbar">
-                <ul class="navbar-nav ">
-                    <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#homesection">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Classes</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Trainers</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Review</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <button class="btn btn-warning ">Join us</button>
+<header id="header" class="fixed-top">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" alt="logo" class="logo-img">
+            </a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#homesection">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Trainers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Review</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                 </ul>
-            </nav>
+                <button class="btn btn-warning ms-3">Join us</button>
+            </div>
         </div>
-    </div>
+    </nav>
 </header>
+
 
 <!--home section-->
 <section class=" home" id="homesection">
@@ -52,10 +46,13 @@
             <h1>Group <br>Practise <br>With Trainers</h1>
             <p class="lead" style="background-color: rgba(0, 0, 0, 0.5); padding: 9px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est non ab architecto, minima velit eum autem corrupti quidem veritatis, nemo ea modi laborum neque eaque iste reiciendis consectetur ducimus in. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, alias.</p>
         </div>
-        <button class="btn btn-custom">Sign up</button>
-        <button class="btn btn-custom2">Details</button>
+        <div class="home-buttons">
+            <button class="btn btn-custom">Sign up</button>
+            <button class="btn btn-custom2">Details</button>
+        </div>
     </div>
 </section>
+
 <!--home info section-->
 <section class="info-section">
     <div class="container info ">
@@ -77,11 +74,125 @@
         </div>
     </div>
 </section>
+
+<!--our classes-->
+<section>
+<div class="container container-section">
+    <div class="small-box">
+        <h1>OUR CLASSES</h1>
+        <span class="line"></span>
+        <p>Lorem ipsum dolor sit amet . Reprehenderit commodi at quaerat nulla possimus deserunt et iure minus consequatur ducimus? </p>
+    </div>
+    <div class="classes">
+        <div class="buttons">
+            <button onclick="changeContent(0,this)" class=" btn" >Yoga</button>
+            <button onclick="changeContent(1,this)" class="btn">Group</button>
+            <button onclick="changeContent(2,this)" class="btn">Solo</button>
+            <button onclick="changeContent(3,this)" class="btn">Stretching</button>
+        </div>
+        <div class="content-wrapper">
+            <div class="content-text col-lg-6">
+                <h3 id="content-title">Why are Your Yoga?</h3>
+                <p id="content-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis impedit assumenda aspernatur ipsam quo, error repellendus. Corrupti nihil in doloremque fugiat officiis, quisquam minus, blanditiis repellat voluptas impedit cumque consectetur?</p>
+                <h3 id="content-time">When comes Your Time Yoga</h3>
+                <p>Saturday-Sunday: 8:00am - 10:00am</p>
+                <p> Monday-Tuesday: 10:00am - 12:00pm</p>
+                <p>Wednesday-Friday: 3:00pm - 6:00pm</p> 
+            </div>
+            <div class="content-images col-lg-6">
+                <img id="content-images" src="./images/yoga.jpg" alt="" class="img-fluid">
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</section>
+<!--BMI CALCULATOR-->
+<section class="container container-section">
+    <div class="bmi ">
+        <div class="col-lg-5">
+            <h3>BMI CALCULATOR</h3>
+            <P style="padding-bottom: 20px;">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</P>
+            <P>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</P>
+            <input type="height" name="height" id="height" class="height" placeholder="Your height">
+            <span>cm</span>
+            <input type="weight" name="weight" id="weight" class="weight" placeholder="Your weight">
+            <span>kg</span>
+        </div>
+        <div class="bmi-content-images col-lg-6">
+            <p style="text-align: center; font-size: 18px; margin: 0;">Your BMI</p>
+            <img src="./images/bmi-index.jpg" alt="" class="bmi-image">
+        </div>
+    </div>
+</section>
+
+<!--Our best Trainers-->
+<section class="container-trainers">
+    <div class="container container-section">
+        <div class="small-box">
+            <h1>OUR BEST TRAINERS</h1>
+            <span class="line"></span>
+            <p>Lorem ipsum dolor sit amet . Reprehenderit commodi at quaerat nulla possimus deserunt et iure minus consequatur ducimus? </p>
+        </div>
+        <div class="trainers">
+            <div>
+                <img  src="./images/trainer1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!--purchase from us-->
+<section class="container container-section">
+    <div class="small-box">
+        <h1>PURCHASE FROM US</h1>
+        <span class="line"></span>
+        <p>Lorem ipsum dolor sit amet . Reprehenderit commodi at quaerat nulla possimus deserunt et iure minus consequatur ducimus? </p>
+    </div>
+    <div class="purchase">
+        <div class="card">
+            <img src="./images/purchase1.jpg" alt="">
+            <div class="card-text">
+                <h5>Kettlebel / 5kg</h5>
+                <p><span style="text-decoration: line-through;">88,90$</span>/59,99$</p>
+                <a href="#"><i class="bi bi-cart"></i> Add to cart</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/purchase2.jpg" alt="">
+            <div class="card-text">
+                <h5>Treadmill</h5>
+                <p><span style="text-decoration: line-through;">899,99$</span>/599,90$</p>
+                <a href="#"><i class="bi bi-cart"></i> Add to cart</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/purchase3.jpg" alt="">
+            <div class="card-text">
+                <h5>Adjustable Dumbbell</h5>
+                <p><span style="text-decoration: line-through;">88,90$</span>/59,99$</p>
+                <a href="#"><i class="bi bi-cart"></i> Add to cart</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/purchase4.jpg" alt="">
+            <div class="card-text">
+                <h5>Kettlebel / 5kg</h5>
+                <p><span style="text-decoration: line-through;">89,90$</span>/59,99$</p>
+                <a href="#"><i class="bi bi-cart"></i> Add to cart</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 <!--review client-->
 <section class=" review">
 <div class="container container-section">
     <div class="small-box">
-        <h1>Rewiev Client</h1>
+        <h1>REVIEW CLIENT</h1>
         <span class="line"></span>
         <p>Lorem ipsum dolor sit amet . Reprehenderit commodi at quaerat nulla possimus deserunt et iure minus consequatur ducimus? </p>
     </div>

@@ -43,3 +43,10 @@
     position: relative;
     display: block;
 }
+.navbar-toggler {
+    border-color: white; /* Çerçeveyi beyaz yap */
+}
+
+.navbar-toggler-icon {
+    filter: invert(1); /* Siyahı beyaza çevirir */
+}

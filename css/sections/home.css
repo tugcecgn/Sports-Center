@@ -9,6 +9,11 @@
     position: relative;
 
 }
+#homesection .home-buttons{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
 .section-title{
     padding-top: 140px;
 }
@@ -42,4 +47,14 @@
 }
 .navbar-scrolled {
     background-color: var(--buton-color-1) /* Sayfa kaydırılınca koyulaşsın */
+}
+@media (max-width: 991px) {
+    .container {
+        flex-direction: column;
+    }
+    #homesection .home-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 }

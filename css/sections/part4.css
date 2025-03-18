@@ -1,0 +1,36 @@
+.purchase{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 10px;
+    padding-top: 30px;
+
+}
+.card{
+    display: flex;
+    object-fit: contain;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden; /* radius verdiğimde fotoğraf bundan etkilenmiyordu ancak bunu verdiğimde taşmalar engellendiği için fotografın köseisne de radius eklenmiş oldu*/
+
+}
+.card p{
+    font-weight: 700;
+    font-size: 12px
+}
+.card a{
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    display:flex;
+    gap: 50px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+
+}
+.card:hover{
+    box-shadow:0 8px 16px rgba(0, 0, 0, 0.5); 
+    transition-duration: 500ms;
+}
