@@ -14,7 +14,7 @@
 </head>
 <body>
 <!--navigasyyon kısmı-->
-<header id="header" class="fixed-top" id="homesection">
+<header id="header" class="fixed-top">
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -25,11 +25,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#homesection">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Classes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Trainers</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Review</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#homeSection">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#classes">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#trainers">Trainers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#review">Review</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
                 <button class="btn btn-warning ms-3">Join us</button>
             </div>
@@ -39,7 +39,7 @@
 
 
 <!--home section-->
-<section class="home" >
+<section class="home" id="homeSection">
     <div class="container">
         <div class="section section-title">
             <span class="blue-box" style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">POWERFULL</span>
@@ -76,8 +76,8 @@
 </section>
 
 <!--our classes-->
-<section>
-<div class="container container-section">
+<section class="container-classes">
+<div class="container container-section" id="classes">
     <div class="small-box">
         <h1>OUR CLASSES</h1>
         <span class="line"></span>
@@ -85,7 +85,7 @@
     </div>
     <div class="classes">
         <div class="buttons">
-            <button onclick="changeContent(0,this)" class=" btn" >Yoga</button>
+            <button onclick="changeContent(0,this)" class="btn active" >Yoga</button>
             <button onclick="changeContent(1,this)" class="btn">Group</button>
             <button onclick="changeContent(2,this)" class="btn">Solo</button>
             <button onclick="changeContent(3,this)" class="btn">Stretching</button>
@@ -94,7 +94,7 @@
             <div class="content-text col-lg-6">
                 <h3 id="content-title">Why are Your Yoga?</h3>
                 <p id="content-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis impedit assumenda aspernatur ipsam quo, error repellendus. Corrupti nihil in doloremque fugiat officiis, quisquam minus, blanditiis repellat voluptas impedit cumque consectetur?</p>
-                <h3 id="content-time">When comes Your Time Yoga</h3>
+                <h3 id="content-time">When comes Your Yoga Time</h3>
                 <p>Saturday-Sunday: 8:00am - 10:00am</p>
                 <p> Monday-Tuesday: 10:00am - 12:00pm</p>
                 <p>Wednesday-Friday: 3:00pm - 6:00pm</p> 
@@ -109,15 +109,15 @@
 </div>
 </section>
 <!--BMI CALCULATOR-->
-<section class="container container-section">
+<section class="container container-section" id="bmi">
     <div class="bmi ">
         <div class="col-lg-5">
             <h3>BMI CALCULATOR</h3>
             <P style="padding-bottom: 20px;">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</P>
             <P>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</P>
-            <input type="height" name="height" id="height" class="height" placeholder="Your height">
+            <input type="number" name="height" id="height" class="height" placeholder="Your height">
             <span>cm</span>
-            <input type="weight" name="weight" id="weight" class="weight" placeholder="Your weight">
+            <input type="number" name="weight" id="weight" class="weight" placeholder="Your weight">
             <span>kg</span>
         </div>
         <div class="bmi-content-images col-lg-6">
@@ -128,7 +128,7 @@
 </section>
 
 <!--Our best Trainers-->
-<section class="container-trainers">
+<section class="container-trainers" id="trainers">
     <div class="container container-section">
         <div class="small-box">
             <h1>OUR BEST TRAINERS</h1>
@@ -145,7 +145,7 @@
 </section>
 
 <!--purchase from us-->
-<section class="container container-section">
+<section class="container container-section" id="purchase">
     <div class="small-box">
         <h1>PURCHASE FROM US</h1>
         <span class="line"></span>
@@ -189,7 +189,7 @@
 </section>
 
 <!--review client-->
-<section class=" review">
+<section class=" review" id="review">
 <div class="container container-section">
     <div class="small-box">
         <h1>REVIEW CLIENT</h1>
@@ -205,20 +205,20 @@
                     <span style="font-weight: 100; font-size: 14px;">CFO</span>
                 </div>
             </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquam quia praesentium omnis veniam in officiis voluptatem, assumenda maxime. Modi tempora veniam blanditiis, impedit cum libero recusandae qui dolorem reprehenderit!</p>
+            <div >
+                <p class="triangle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquam quia praesentium omnis veniam in officiis voluptatem, assumenda maxime. Modi tempora veniam blanditiis, impedit cum libero recusandae qui dolorem reprehenderit!</p>
             </div>
         </div>  
         <div>
             <div class="client">
-                <img src="./images/client2.jpg" alt="">
+                <img src="./images/client2.jpg" alt="" >
                 <div>
                     <h6>Diet Expert</h6>
                     <span style="font-weight: 100; font-size: 14px;">CFO</span>
                 </div>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquam quia praesentium omnis veniam in officiis voluptatem, assumenda maxime. Modi tempora veniam blanditiis, impedit cum libero recusandae qui dolorem reprehenderit!</p>
+                <p class="triangle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquam quia praesentium omnis veniam in officiis voluptatem, assumenda maxime. Modi tempora veniam blanditiis, impedit cum libero recusandae qui dolorem reprehenderit!</p>
             </div>
         </div>
     </div>
@@ -228,7 +228,7 @@
 
 <!--contact us-->
 <section >
-    <div class="container container-section ">
+    <div class="container container-section " id="contact">
         <div class="small-box">
             <h1>CONTACT US</h1>
             <span class="line"></span>
@@ -258,7 +258,7 @@
                     <textarea name="textarea" id="texarea" cols="48" rows="5" placeholder="Your Message"></textarea>
                 </form>
             </div>
-            <div><!--! burada iframe naasıl responsive olacak-->
+            <div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.283657558091!2d-78.46241652390881!3d37.24097687212475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b2455f4247cb43%3A0x6572fd5b1bcbf946!2sHampden-Sydney%20College!5e0!3m2!1str!2str!4v1741965628245!5m2!1str!2str" width="450" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>

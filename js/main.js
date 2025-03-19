@@ -1,16 +1,20 @@
-window.onscroll = function(){
+window.onscroll = function () {
     var navbar = document.getElementById("header");
-    var home = document.getElementById("homesection");
-    var scrollposition = window.scrollY;/*kullanıcının sayfayı ne kadar kaydırıdığı bilginisini verir.*/
-    var homeHeight = header.offsetHeight;/*headerın uzunluk bilgisini alır  */
+    if (!navbar) return; // Navbar bulunamazsa kod çalışmayı durdurur.
 
-    if (scrollposition > homeHeight) {
+    var scrollPosition = window.scrollY; // Kullanıcının kaydırdığı mesafe
+    var viewportHeight = window.innerHeight; // Ekran yüksekliği (100vh)
+
+    console.log("Scroll Position:", scrollPosition); // Konsolda kaydırma mesafesini kontrol et
+
+    if (scrollPosition >= viewportHeight) { // 100vh (tam ekran) aşağı inildiyse
         navbar.classList.add("navbar-scrolled");
     } else {
         navbar.classList.remove("navbar-scrolled");
     }
+};
 
-}
+
 const title = [
     "Why are Your Yoga?",
     "Why you shouldn't work with a group",
@@ -29,7 +33,7 @@ const time = [
     "When comes Your Time Solo",
     "When comes Your Time Stretching",
 ]
-function changeContent(index,clickedbuton){
+function changeContent(index,clickedButton){
     document.getElementById("content-title").textContent=title[index];
     document.getElementById("content-images").src=images[index];
     document.getElementById("content-time").textContent=time[index];
@@ -37,7 +41,7 @@ function changeContent(index,clickedbuton){
     document.querySelectorAll(".btn").forEach(button =>{
         button.classList.remove("active");
     });
-    clickedbuton.classList.add("active");
+    clickedButton.classList.add("active");
 
 
 }
