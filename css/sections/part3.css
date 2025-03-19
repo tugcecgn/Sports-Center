@@ -1,10 +1,72 @@
-.trainers{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
+
 .container-trainers{
     background-color: var(--background-color-1);
 
 
+}
+.trainers{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.trainers-card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid orange;
+}
+.trainers-card::after,
+.trainers-card::before{
+    content: "";
+    width: 60%;
+    background-color: var(--buton-color-1);
+    position: absolute;
+    bottom: -100%;
+    height: 20px;
+    left: 50%; /* Ortalamak için sol kenarını ortaya al */
+    transform: translateX(-50%);
+    transition: bottom 0.3s ease;
+}
+
+.trainers-card img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.text{
+    position: absolute;
+    color: white;
+    background-color: var(--buton-color-1);
+    bottom: -100%;
+    height: 60px;
+    width: 87%;
+    text-align: center;
+    transition: bottom 0.3s ease;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.text p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.text h5{
+    font-size: 20px;
+    font-weight: 600;
+}
+.trainers-card:hover .text{
+    bottom: 30px;
+}
+.trainers-card:hover::after{
+    bottom: 90px;
+}
+.trainers-card:hover::before{
+    bottom: 10px;
+}
+@media  (max-width: 991px){
+    .trainers{
+
+        flex-direction: column;
+        gap: 40px;
+    }
 }
