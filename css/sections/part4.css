@@ -1,42 +1,142 @@
-.purchase{
+/* ilerleme durumu 4 kısmını içerir (review client contact us ve footer ) */
+.contact{
     display: flex;
     flex-direction: row;
-    flex: 1;
-    gap: 10px;
-    padding-top: 30px;
+    justify-content: space-between;
+    margin-top: 80px;
+    gap: 20px;
 
 }
-.card{
+.form{
     display: flex;
-    object-fit: contain;
-    text-align: center;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    overflow: hidden; /* radius verdiğimde fotoğraf bundan etkilenmiyordu ancak bunu verdiğimde taşmalar engellendiği için fotografın köseisne de radius eklenmiş oldu*/
+    flex-direction: column;
 
 }
-.card p{
-    font-weight: 700;
-    font-size: 12px
+.container-section{
+    padding:60px;
 }
-.card a{
-    font-weight: 700;
-    font-size: 14px;
+.contact-info{
+    display: flex;
+    gap: 40px;
+    padding-left:9px ;
+    
+}
+.form input, textarea{
+    background-color: var(--background-color-1);
+    border: none;
+    margin: 7px;
+    border-radius: 3px;
+}
+.form input,textarea::placeholder{
+    font-size: 12px;
+    padding: 5px;
+}
+.footer{
+    background-color: var(--buton-color-1);
+    color: white;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+.footer .links{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+.footer .links .information{
+    display: flex;
+    flex-direction: column;
+}
+.links a{
     text-decoration: none;
-    color: black;
-    display:flex;
-    gap: 50px;
-    margin-left: 20px;
-    margin-bottom: 10px;
+    color: white;
+}
+.review{
+    background-color: var(--background-color-1);
+}
+.comment{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.comment img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    
 
 }
-.card:hover{
-    box-shadow:0 8px 16px rgba(0, 0, 0, 0.5); 
-    transition-duration: 500ms;
+.comment .client{
+    display: flex;
+    gap: 15px;
+    padding: 13px;
+    align-items: center;
+
 }
+
+.comment p{
+    font-size: 13px;
+    background-color: var(--buton-color-1);
+    padding: 10px;
+    color: white;
+}
+.comment h6{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+}
+/* review client bölümünün yazılı olan kısmının aşağısındaki üçgen kısmı  */
+.triangle {
+    position: relative; /* Konteynerin içine pozisyon ekliyoruz */
+    padding: 20px; /* İçerik ile üçgenler arasında boşluk */
+    background-color: #f9f9f9; /* Arka plan rengi */
+
+  }
+  
+  .triangle p {
+    margin: 0; 
+  }
+  
+  .triangle::before{
+    content: ''; 
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent; /* Sağ kenar şeffaf */
+    border-top: 40px solid var(--buton-color-1);
+    opacity: 0.5;
+  }
+  .triangle::after {
+    content: ''; 
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 40px solid transparent; 
+    border-top: 40px solid var(--buton-color-1);
+    opacity: 0.5;
+  }
+  
+  .triangle::before {
+    bottom: -40px; /* Sol alt köşeye yerleştir */
+    left: 0; /* Sol tarafta */
+  }
+  
+  .triangle::after {
+    bottom: -40px; /* Sağ alt köşeye yerleştir */
+    right: 0; /* Sağ tarafta */
+  }
+  
+
+  /* responsive */
 @media (max-width: 991px) {
-    .purchase {
+    .contact {
         flex-direction: column;
     }
-
+    .comment{
+        flex-direction: column;
+    }
+    iframe{
+        width: 100%;
+        
+    }
 }

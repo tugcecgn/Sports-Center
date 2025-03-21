@@ -1,12 +1,13 @@
+/*! bu sayfa sadece navbar kısmının csslerini içerir */
+
 #header{
     background-color:transparent;
     transition: background-color 0.3s ease;
     font-size: 14px;
-    position: absolute;
     z-index: 1000;
     top: 0;
     width: 100%;
-    position: fixed;
+    position: fixed;/*sayfanın en üstünde kalması için*/
 
 }
 #header .container{
@@ -30,7 +31,6 @@
 }
 .navbar button{
     font-weight: 1000;
-    padding: 0;
     color: white;
     font-size: 16px;
     padding-left: 10px;

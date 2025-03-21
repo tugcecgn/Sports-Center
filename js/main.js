@@ -1,3 +1,4 @@
+// navbar aşağıya indiğinde arka planının rengini değiştirmek için kullanılan kod
 window.onscroll = function () {
     var navbar = document.getElementById("header");
     if (!navbar) return; 
@@ -12,7 +13,7 @@ window.onscroll = function () {
     }
 };
 
-
+// butonlara tıklanıldığında yazı ve resimlerin değişmesini sağlayan js kodu
 const title = [
     "Why are Your Yoga?",
     "Why you shouldn't work with a group",
@@ -35,15 +36,14 @@ function changeContent(index,clickedButton){
     document.getElementById("content-title").textContent=title[index];
     document.getElementById("content-images").src=images[index];
     document.getElementById("content-time").textContent=time[index];
-
+//duruma göre ya active css ekler ya da var olanı çıktır.
     document.querySelectorAll(".btn").forEach(button =>{
         button.classList.remove("active");
     });
     clickedButton.classList.add("active");
-
-
 }
 
+//kullanıcıdan aldığı verilere göre bmi hesaplar ve ok ile resimdeki kısımları gösterir.
 function calculateBMI() {
     let heightInput = document.getElementById("height");
     let weightInput = document.getElementById("weight");
@@ -63,15 +63,15 @@ function calculateBMI() {
     let position = 0;
 
     if (bmi < 18.5) {
-        position = 20; // Zayıf
+        position = 20; 
     } else if (bmi >= 18.5 && bmi < 24.9) {
-        position = 32; // Normal
+        position = 32; 
     } else if (bmi >= 25 && bmi < 29.9) {
-        position = 47; // Fazla kilolu
+        position = 47;
     } else if (bmi >= 30 && bmi < 34.9) {
         position = 62;
     }else {
-        position = 76; // Obez
+        position = 76; 
     }
 
     document.getElementById("bmi-arrow").style.left = position + "%";

@@ -1,3 +1,4 @@
+/* birçok yerde ortak olarak kullanılan yerleri içerir */
 :root{
     --buton-color-1:#355592;
     --background-color-1:#D6EAF8;
@@ -27,6 +28,7 @@
     color: white;
     box-sizing: border-box;/*borderı butonun içinde tutmsı için */
 }
+/* çoğu yerde ortak olan üstte başlık altta turuncu çizgi ve altındaki lorem kısmı  */
 .small-box{
     max-width: 70%;
     margin: auto;
@@ -60,7 +62,7 @@
     border-radius: 5px;
 }
 
-
+/* responsive tasarım  */
 @media (max-width: 991px){
     .small-box{
        max-width: 100%;

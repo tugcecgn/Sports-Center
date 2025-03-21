@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sport Center</title>
-    <meta name="description" content="sport center,zayıflama,kilo alma,yoga ,vücüt endeksi,trainers">
+    <meta name="description" content="Sport Center - Yoga, kilo alma & zayıflama programları, vücut endeksi hesaplama ve profesyonel antrenörlerle spor yapma imkanı!">
     <link rel="stylesheet" href="vendor/aos/aos.css">
     <link rel="stylesheet" href="vendor/bootstrap-icons/bootstrap-icons.css">
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -31,7 +31,7 @@
                     <li class="nav-item"><a class="nav-link" href="#review">Review</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
-                <button class="btn btn-warning ms-3">Join us</button>
+                <button class="btn btn-warning ms-3"><a href="#contact" style="text-decoration: none; color: white;">Join us</a></button>
             </div>
         </div>
     </nav>
@@ -84,6 +84,7 @@
         <p>Lorem ipsum dolor sit amet . Reprehenderit commodi at quaerat nulla possimus deserunt et iure minus consequatur ducimus? </p>
     </div>
     <div class="classes">
+        <!--changeContent ksımını js ile içeriklerini değiştiricez-->
         <div class="buttons">
             <button onclick="changeContent(0,this)" class="btn active" >Yoga</button>
             <button onclick="changeContent(1,this)" class="btn">Group</button>
@@ -124,6 +125,7 @@
             <p style="text-align: center; font-size: 18px; margin: 0;">Your BMI</p>
             <div class="bmi-image-container">
                 <img src="./images/bmi-index.jpg" alt="" class="bmi-image img-fluid">
+                <!--ok js ile dinamikleştirilecek-->
                 <div id="bmi-arrow">🔺</div>
             </div>
         </div>
@@ -141,7 +143,7 @@
         <div class="trainers ">
             <div class="trainer-wrapper">
                 <div class="side-box">
-                    <img  src="./images/trainer1.jpg" alt="" class="trainers-images">
+                    <img  src="./images/trainer1.jpg" alt="" class="Yoga Trainer Emily Johnson" loading="lazy"><!--performans açısından lazy eklenmeli-->
                     <div class="trainer-info">
                         <h5>Emily Johnson</h5>
                         <p>Yoga Trainer</p>
@@ -150,7 +152,7 @@
             </div>
             <div class="trainer-wrapper"> 
                 <div class="side-box">
-                    <img  src="./images/trainer2.jpg" alt="">
+                    <img  src="./images/trainer2.jpg" alt="Conditioning Trainer John Smith" loading="lazy">
                     <div class="trainer-info">
                         <h5>John Smith</h5>
                         <p>Conditioning Trainer</p>
@@ -160,7 +162,7 @@
             
             <div class="trainer-wrapper"> 
                 <div class="side-box">
-                    <img  src="./images/trainer3.jpg" alt="">
+                    <img  src="./images/trainer3.jpg" alt=" Cardio Trainer Jane Doe" loading="lazy">
                     <div class="trainer-info">
                         <h5>Jane Doe</h5>
                         <p>Cardio Trainer</p>
@@ -296,24 +298,23 @@
 
 <!--footer-->
 <footer class="footer">
-    </div>
     <div class="container">
     <img src="./images/logo.png" alt="logo" class="logo-img">
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus illum esse dignissimos voluptate neque molestiae quae impedit nihil minima similique consequatur, aut facilis perspiciatis magnam quos dolore labore architecto animi?</p>
     <div class="links">
         <div class="information">
             <h4>Information</h4>
-            <a href="">About us</a>
-            <a href="">Classes</a>
-            <a href="">Blog</a>
-            <a href="">Contact</a>
+            <a href="#">About us</a>
+            <a href="#">Classes</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
         </div>
         <div class="information">
             <h4>Helpfull Links</h4>
-            <a href="">Services</a>
-            <a href="">Supports</a>
-            <a href="">Terms & Candition</a>
-            <a href="">Privacy Policy</a>
+            <a href="#">Services</a>
+            <a href="#">Supports</a>
+            <a href="#">Terms & Candition</a>
+            <a href="#">Privacy Policy</a>
         </div>
     </div>
 </div>
