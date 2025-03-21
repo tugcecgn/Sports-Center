@@ -109,26 +109,17 @@
     font-size: 20px;
     font-weight: 600;
 }
-/* .trainer-wrapper:hover .text{
-    bottom: 30px;
-}
-.trainer-wrapper:hover::after{
-    bottom: 90px;
-}
-.trainer-wrapper:hover::before{
-    bottom: 10px;
-}
-*/
+
 
 /* Hover olunca çıkacak bilgi kartı */
 .trainer-info {
 
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 50%;
-    transform: translateX(-50%) translateY(0); /* Başlangıçta tamamen aşağıda */
+    transform: translateX(-50%) translateY(10px); 
     width: 80%;
-    background: rgba(53, 85, 146, 0.9); /* Lacivert arka plan */
+    background: rgba(53, 85, 146, 0.9); 
     color: white;
     text-align: center;
     padding: 5px;
@@ -138,6 +129,7 @@
   }
   .trainer-wrapper:hover .trainer-info{
     z-index: 1;
+    transform: translateX(-50%) translateY(0);
   }
   .trainer-wrapper:hover {
     border: solid;

@@ -1,13 +1,11 @@
 window.onscroll = function () {
     var navbar = document.getElementById("header");
-    if (!navbar) return; // Navbar bulunamazsa kod çalışmayı durdurur.
+    if (!navbar) return; 
+    var viewportHeight = window.innerHeight; 
 
-    var scrollPosition = window.scrollY; // Kullanıcının kaydırdığı mesafe
-    var viewportHeight = window.innerHeight; // Ekran yüksekliği (100vh)
-
-    console.log("Scroll Position:", scrollPosition); // Konsolda kaydırma mesafesini kontrol et
-
-    if (scrollPosition >= viewportHeight) { // 100vh (tam ekran) aşağı inildiyse
+    var scrollPosition = window.scrollY;
+    console.log("Scroll Position:", scrollPosition); 
+    if (scrollPosition >= viewportHeight) { 
         navbar.classList.add("navbar-scrolled");
     } else {
         navbar.classList.remove("navbar-scrolled");
