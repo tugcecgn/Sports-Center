@@ -18,7 +18,7 @@ Bu projede:
 🔹 **HTML5** - Yapıyı oluşturmak için  
 🔹 **CSS3** - Sayfa tasarımı ve animasyonlar için  
 🔹 **Bootstrap** - Responsive ve düzen kolaylığı için  
-🔹 **JavaScript (Opsiyonel)** - Eğer ekstra interaktif öğeler eklenecekse  
+🔹 **JavaScript** - Siteyi dinamik hale getirmek için
 
 ## 🚀 Katkıda bulunmak için  
 
